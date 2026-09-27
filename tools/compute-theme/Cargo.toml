@@ -1,0 +1,12 @@
+[package]
+name = "compute-theme"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# Cosmic's own theme code: the libcosmic commit that cosmic-settings 1.8.0 is built
+# with (its Cargo.lock, tag epoch-1.8.0). Update both revs with Cosmic.
+[dependencies]
+cosmic-theme = { git = "https://github.com/pop-os/libcosmic", rev = "2a73fbc0edfe1525381bf999e241d73def79b222" }
+cosmic-config = { git = "https://github.com/pop-os/libcosmic", rev = "2a73fbc0edfe1525381bf999e241d73def79b222" }
+palette = "0.7"
